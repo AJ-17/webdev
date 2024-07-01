@@ -1,0 +1,15 @@
+td{
+    border: black 2px dotted;
+}
+tfoot{
+    border: rgb(0, 0, 0) 3px solid;
+}
+th{
+    border: rgb(214, 196, 196) 2px solid;
+}
+table{
+    border: black 1px solid;
+}
+caption{
+    border: black 1px solid;
+}

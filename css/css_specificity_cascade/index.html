@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .yello{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+        .cred#a{
+            color:blue;
+        }        
+        h1 .yellow{
+            color:green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- h1 tag , all classes are trying  to give different colors to the below text then which color will appear ?-->
+        <h1 id="a" class="yellow cred cpurple">CSS Specificity</h1>
+
+        <!-- to resolve these types of conflicts css have The Cascade Algorithm -->
+        <!-- Has 4 distinct stages.
+
+        Position and order of appearance: the order in which your CSS rules appear [if selector are of same type]
+        Specificity: an algorithm that determines which CSS selector has the strongest match [inline css>id>classes or attribute selector>elment>universal(*)]
+        
+        specificity calculation:
+            universal: 0;
+            element: 1;
+            class and attribute or pseudo class : 10;
+            id: 100;
+            inline: 1000;
+            !important: 10000;
+
+        in case of complex selector add specificty of all the individual slelector eg in h1.cred -- >11 .cred#a -- > 110  a.harryclass.rohan-class[href]:hover  -- > 1+10+10+10+10=41
+
+            
+        Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS [by the browser]
+        Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type [most priority]
+        -->
+
+
+        
+
+    </div>
+    
+</body>
+</html>

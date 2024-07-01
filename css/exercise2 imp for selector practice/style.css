@@ -1,0 +1,17 @@
+div:first-child > p:first-child{
+    background-color: red;
+}
+div:first-child{
+    background-color: green;
+}
+div > p:first-child{
+    background-color: orange;
+}
+div{
+    background-color: blue;
+    
+}
+p{
+    margin:0px;
+}
+

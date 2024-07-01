@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selector</title>
+    <style>
+        /* by classes */
+        .red{  
+            background-color: red; 
+            color: blueviolet;
+        }
+        /* by id */
+        #green{
+            background-color: green;   
+        }
+        /* child tag  the tag that are directly under div not nested once*/
+        div >p {
+            background-color: pink;
+            color:darkorchid;
+        }
+        /* decendent tag like p in any article tag */
+        div p{
+            background-color: pink;
+            color:darkorchid;
+        }
+        /* all */
+        *{
+            border:1px black solid;
+            padding: 0;
+            margin: 0;
+        }
+        /* pseudo selectors */
+        a:visited{
+            color:yellow;
+        }
+        a:link{
+            color:blue;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        /* first p anywhere inside or outside any tag */
+        p:first-child{
+            color:brown;
+        }
+        /* attribute selector */
+        [data=q]{
+            color:pink;
+            background-color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        These is red class div
+        <p>these is para inside div class red</p>
+        <article>
+            <p>these is a para inside a article in a div means decendent<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores recusandae exercitationem placeat quod vel quae hic quisquam perspiciatis nam, ducimus asperiores aliquam voluptatibus a molestiae, quaerat officiis libero nobis inventore repellat! Minus praesentium incidunt aliquid distinctio, ipsa laborum. Temporibus sed reprehenderit voluptatum quidem? Nulla sunt, voluptatem amet illo at unde hic, itaque maxime minus, laborum sequi ratione eos neque asperiores vel quia ipsum! Perspiciatis nesciunt amet adipisci nulla, aliquid eveniet et doloremque. Laboriosam commodi aspernatur cumque, saepe velit quidem, minus deleniti doloremque nemo vero hic error iusto quasi reiciendis quaerat labore tempore. Velit placeat rerum distinctio repudiandae eligendi libero ratione?</p>
+        </article>
+    </div>
+    <br>
+    <div id="green">
+        These is div with id green
+        <p>these is para inside div id green</p>
+    </div>
+    <a href="https://google.com">go to google</a>
+    <a href="https://googdle.com">go to google</a>
+
+    <p data="q">These is to test a attribute selector</p>
+
+</body> 
+</html>

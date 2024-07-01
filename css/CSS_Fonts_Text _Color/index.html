@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&display=swap');
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight:600;
+            font-style: italic;
+            color:yellow;
+            line-height: 2;
+        }
+        h1{
+            font-family:'play','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration:underline;
+            font-size: 100px;
+            text-align: center;
+            
+        }
+        #googlefont{
+            font-family: "Play", sans-serif;
+            line-height: 1.38;
+            letter-spacing: 2px;
+        }
+
+        h2{
+            text-transform: capitalize;
+            text-decoration:underline;
+            text-decoration-color: blue;
+            text-decoration-thickness: 7px;
+            text-decoration-style:wavy;
+            text-indent: 146px;
+        }
+        .borders{
+            border: red 2px solid;
+        }
+        .c1{
+            width:40px;
+        }
+        .c2{
+            width:40px;
+            text-overflow:ellipsis; 
+            /* with the above command bellow is required to see changes */
+            overflow: hidden;
+        }
+        .c3{
+            width:40px;
+            text-overflow: clip;
+            overflow:hidden;
+        }
+        .c4{
+            width:40px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- for seeing how fonts look like -->
+        <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>These is a font</p>
+
+
+
+        <article id="googlefont">These is a google font <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eaque repellendus quod quae? Ipsa perspiciatis ea non necessitatibus sed. Temporibus, fuga aut? Error sed nesciunt, dolore blanditiis consectetur recusandae facere voluptas quam voluptatum beatae tempora cumque? Repellendus debitis recusandae accusantium sunt minima natus cupiditate quis, ratione vitae quaerat, dignissimos, sit hic. Consequuntur, impedit, beatae quam voluptatem quae quidem id nisi magnam et ex est repellat debitis natus non labore omnis vitae ipsam cupiditate quos velit tempora inventore ducimus voluptate ratione. Corporis ipsa ipsam at mollitia nobis, beatae minus, neque incidunt reiciendis nostrum illum iste itaque voluptatibus blanditiis quidem impedit error suscipit eum quisquam quasi libero id nam? Temporibus tempora fugit reprehenderit. Provident neque eos officia, obcaecati in quam architecto eaque amet fuga dolores voluptas velit saepe maiores quae delectus adipisci? Culpa ullam nisi adipisci dolorem laboriosam fugiat, voluptates porro neque praesentium repellendus dolorum alias consequatur velit. Eveniet quaerat aspernatur dignissimos, nisi dolore architecto neque rerum incidunt ipsam nesciunt sunt, quisquam odio odit perferendis facilis commodi possimus itaque iusto fugiat ducimus consectetur aliquam accusantium totam alias. Sequi harum, itaque, magni porro libero numquam distinctio incidunt nihil reprehenderit, iure repellendus? Quae eos sit placeat inventore commodi ipsam qui. Expedita at doloremque magnam.</article>
+    </div>
+    
+    <p>These is a example of default situation without using text-overfow</p>
+    <div class="borders c1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, repellat?
+    </div>
+    <p>These is with ellipsis hidden</p>
+    <div class="borders c2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, repellat?</div>
+    <p>These is with clip hidden</p>
+    <div class="borders c3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, repellat?</div>
+    <p>Instead of hidden we can also use scroll</p>
+    <p>TO break the words we can use word-break all</p>
+    <div class="borders c4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, repellat?</div>
+    
+</body>
+</html>

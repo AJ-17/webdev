@@ -1,0 +1,55 @@
+h1{
+    color: rgb(255,10,122);
+    background-color: rgb(124, 7, 7);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    /* can be left or right also */
+}
+h2{
+    color: blue;
+    font-size: 200px;
+    text-decoration:overline;
+}
+h3{
+    color:lime;
+    text-decoration: line-through;
+
+}
+p{
+    color:purple;
+    text-decoration:none;
+    line-height: 22px;
+    letter-spacing: 3px;
+    column-count: 4;
+    column-gap: 60px;
+    border: rgb(226, 93, 93) solid 2px;
+}
+
+ul{ 
+    /* border-width: 4px;
+    border-style: solid;
+    border-color: blue; */
+
+
+   /* border:rgb(0, 0, 0) solid 2px; */
+
+   border-top: rgb(0, 0, 0) solid 2px; 
+   border-bottom: blue dotted 4px;
+}
+
+li{
+    list-style-type: square;
+    text-shadow: 1px 1px lightgray;
+}
+
+span{
+    display: block;
+    /* or display inline */
+}
+
+div{
+    border: 20px red solid;
+    margin:100px;
+    padding: 50px;
+
+}

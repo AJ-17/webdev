@@ -1,0 +1,10 @@
+p{
+    background-color: yellow;
+    padding: 10px;
+    border: rgb(0, 0, 0) 5px solid;
+    margin: 100px;
+    height: 400px;
+    width: 800px;
+    box-sizing: border-box;/*if we don't use these option then height will be height of main content after using it height will be height of content+border+padding*/
+    
+}
