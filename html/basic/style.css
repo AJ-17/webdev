@@ -20,7 +20,7 @@ p{
     text-decoration:none;
     line-height: 22px;
     letter-spacing: 3px;
-    column-count: 4;
+    column-count:3;
     column-gap: 60px;
     border: rgb(226, 93, 93) solid 2px;
 }

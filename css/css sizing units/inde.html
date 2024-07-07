@@ -11,19 +11,46 @@
             padding:0;
         }
         .box{
-            border:2px solid black;
+            border:2px solid rgb(255, 0, 0);
             background-color: aqua;
             width:256px;/*pixel*/
-            width:100vw;/*viewport width*/
-
+            box-sizing: border-box;
+            width:60vw;/*viewport width 100 is like % of screen*/
+            margin:auto;/*left right margin will be equal note auto is used only for left right */     
+            font-size:2rem; /*the size which was is given to a root level tag such as h1 that rem times*/
+        }
+        .container{
+            border:2px solid rgb(255, 0, 0);
+            background-color: aqua;
+            width:256px;/*pixel*/
+            box-sizing: border-box;
+            width:80vw;/*viewport width 100 is like % of screen*/
+            height:80vh;
+            margin: 20px auto;
+            font-size:2em; /*mean the by default size which was to be given become em times in these case 2 time*/
+            /* min-height: ;
+            max-height: ;           All these adjust themself according to the content height if needed otherwise the 
+            min-width: ;                height and width are default
+            max-width: ; */
 
         }
 
+        p{
+            font-size: 1rem;
+        }
+        /* vmin vmax are same as vh and vw just the differnce is vmin will act like vw in a device where width is less then height and vise verse*/
+        /* % is in compared to the parent branch */
     </style>
 </head>
 <body>
+    <h1>hello</h1>
     <div class="box">
         Hello these is a text
+    </div>
+    <h2>heelp <p>heeloo</p></h2><!--The default size of p is 16px and when 2rem is used  the size will be 32px-->
+<!-- when we will use 2em then the size that was  to be given to p because of h 24px will get doubled 48px -->
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ab, qui sapiente dolore quaerat rerum veniam iusto rem porro quas ea excepturi quo necessitatibus ipsa provident eos ullam quis maiores voluptatibus expedita a, delectus similique! Sunt illo, similique accusamus alias illum minus incidunt autem magnam? Nam dicta natus id! Dolore velit temporibus vel quaerat doloremque molestias porro error assumenda expedita pariatur, id, natus officia debitis placeat corrupti commodi. Recusandae nostrum eos voluptatibus, iusto fuga doloremque iure.
     </div>
 </body>
 </html>
