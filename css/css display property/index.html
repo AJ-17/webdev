@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inl{
+            border: 2px solid;
+            margin:55px;
+            padding:10px;
+            display:inline;
+            /* if we only use inline then inline don't having upper and lower margin and upper padding*/
+            /* to fix the above issue we can use the option inline-block */
+        }
+        .bll{
+            display:inlne-block;
+            border:black 2px solid;
+            margin:50px;
+            display:flex;
+
+            
+
+        }
+
+        .dn{
+            display: none;
+        }
+        .visihiden{
+            border:black 2px solid;
+            visibility: hidden;
+
+        }
+
+        
+    </style>
+</head>
+ <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+<body>
+    <div class="inl">These is a div but a inline</div>
+    <div class="bll">these is a div but a inline-block</div>
+    <hr>
+    <div class="dn">displaynone Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, similique. Blanditiis perspiciatis officiis debitis. Aliquid maxime porro quisquam quibusdam? Ratione dolores, suscipit minima odit, quisquam deleniti voluptas sit repudiandae, voluptate vel eveniet officiis accusamus exercitationem. Tempore quis assumenda quae ullam beatae esse quisquam!</div>
+    <hr>
+
+    <hr>
+    <div class="visihiden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consequatur libero itaque quaerat eos cumque molestiae, facilis dolor iure iusto quam aspernatur enim optio possimus nesciunt mollitia soluta aliquid laudantium. Iure veniam sapiente maxime recusandae voluptate quis asperiores. Voluptate ex vero modi aliquam est itaque, placeat voluptatibus laudantium, aperiam repudiandae provident totam natus ut sapiente quod aut commodi exercitationem reprehenderit doloribus dicta suscipit, tempora id. Suscipit perspiciatis odit at omnis ipsa? Laboriosam culpa voluptatum tempore. Quod vel animi temporibus suscipit possimus! Saepe accusamus corporis, quam est ullam aspernatur veniam ea voluptatum, excepturi iusto quibusdam distinctio maiores debitis ratione, alias earum.</div>
+    <hr>
+
+
+
+</body>
+</html>
